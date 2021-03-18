@@ -1,10 +1,10 @@
 import './App.css';
 import styled from 'styled-components';
-
+import Tweet from './Tweet';
 //
 // THOSE ARE THE TWEETS YOU NEED TO RENDER ON SCREEN, IMAGINE THOSE BEING SENT BACK FROM THE SERVER
 // 
-const TWEETS = [
+export const TWEETS = [
   {
     id: 1,
     tweet: 'This is the best tweet in the world. Even tho this is not actually a tweet. Oh wel...',
@@ -88,14 +88,13 @@ const TWEETS = [
   },
 ]
 
+
 function App() {
   return (
     <Wrapper>
       <h1>Welcome to Shape Twitter. A place for your thoughts.</h1>
 
-
-      {/* THIS IS WHERE YOU START, YOUR TWEETS SHOULD APPEAR BELOW. */}
-
+      <Tweet/>
 
     </Wrapper>
   );

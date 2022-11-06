@@ -1,0 +1,138 @@
+.tweet_container {
+  display: flex;
+  padding: 12px;
+  border-color: rgb(239, 243, 244);
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 940px;
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+.tweet_container:hover {
+    scale: 1.01;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;  
+}
+
+.tweet_container + .tweet_container {
+  border-top: none;
+}
+
+.user_avatar_container {
+  height: 100%;
+  margin-right: 12px;
+}
+
+.user_avatar {
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.user_avatar:hover {
+    cursor: pointer;
+}
+
+.content {
+  max-width: 100%;
+}
+
+.author {
+  display: flex;
+}
+
+.author:hover {
+    cursor: pointer;
+}
+
+.author_name {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.author_username {
+  color: #626e7c;
+}
+
+.text {
+  margin-top: 3px;
+  max-width: 100%;
+}
+
+.engagement {
+  display: flex;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.engagement_section {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  min-width: fit-content;
+  max-width: 100px;
+  color: #626e7c;
+  transition: 0.3s;
+}
+
+.engagement_section:hover {
+  cursor: pointer;
+  color: #505964;
+}
+
+.icon {
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .tweet_container {
+        max-width: 800px
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .tweet_container {
+        max-width: 700px
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tweet_container {
+        max-width: 600px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .tweet_container {
+        max-width: 500px
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .tweet_container {
+        max-width: 400px
+    }
+
+    .engagement_section {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .tweet_container {
+        max-width: 320px
+    }
+
+    .engagement_section {
+        margin-right: 15px;
+    }
+}
